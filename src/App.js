@@ -46,22 +46,9 @@ function App() {
 
   return (
     <>
-      {live && <>
-        {isMobile ? (
-          <div className={classes.App} >
-            <Video />
-            <ToggleBar info={toggleInfo} />
-            <Chat show={showChat} live={live} isMobile />
-            <Promotions isMobile />
-          </div>
-        ) : (
-          <div className={classes.App} >
-            <Chat show={showChat} toggle={toggleChat} live={live} />
-            <Video live={live} />
-            <Promotions />
-          </div>
-        )}
-      </>}
+     <video id="azuremediaplayer" class="azuremediaplayer amp-default-skin amp-big-play-centered" controls autoplay width="640" height="400" poster="" data-setup='{}' tabindex="0">
+        <source src="//amssamples.streaming.mediaservices.windows.net/3b970ae0-39d5-44bd-b3a3-3136143d6435/AzureMediaServicesPromo.ism/manifest" type="application/vnd.ms-sstr+xml" />
+    </video>
     </>
   );
 }
