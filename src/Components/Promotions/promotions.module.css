@@ -1,0 +1,103 @@
+.PromotionsContainer {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  min-width: 30rem;
+}
+
+.hideButton{ 
+  width: fit-content;
+  border: 0;
+  background-color: white;
+}
+
+.hideArrow{
+  height: 1.5rem;
+  display: grid;
+  cursor: pointer;
+}
+
+.title {
+  margin-bottom: 1.3rem;
+  padding-left: 1rem;
+}
+
+.Promotions {
+  overflow-y: scroll; 
+  flex: 1;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.nonDisplay{
+  display: none;
+}
+
+.Promotions::-webkit-scrollbar {
+  width: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.Promotions::-webkit-scrollbar-track {
+  background-color: darkgrey;
+  border-radius: 0.4rem;
+}
+
+.Promotions::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 0.4rem;
+}
+
+.button{ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid gray;
+  padding: 1rem;
+  background: white;
+}
+.button:last-child {
+  border-bottom: 1px solid gray;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.product {
+  height: 5rem;
+  margin-right: 0.5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.info label:hover{
+  cursor: pointer;
+}
+
+.productName{
+  margin-bottom: 0.3rem;
+}
+
+.rightArrow{
+  height: 2rem;
+}
+
+@media (min-width: 640px) {
+  .PromotionsContainer {
+    width: 25%;
+    min-width: 0rem;
+  }
+}

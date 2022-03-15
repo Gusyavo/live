@@ -1,0 +1,28 @@
+.loginButton{
+  height: 2rem;
+  width: 60%;
+  align-self: center;
+}
+
+.loginContainer{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 9rem;
+  width: 9rem;
+  /* background: red; */
+  top: 50%;
+  left: 0;
+  right:0 ;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+.loginInput{
+  width: 100%;
+  height: 2rem;
+}
