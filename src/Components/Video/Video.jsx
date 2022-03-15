@@ -14,10 +14,10 @@ function Video() {
   return (
     <div className={classes.videoContainer}>
       {/* <source src={require('../../assets/choon.mp4')} />  */}
-      <video ref={videoRef} id="azuremediaplayer"  className="azuremediaplayer amp-default-skin" autoPlay width="100%" height="100%" poster="" data-setup='{}' tabindex="0">
+      <video id="azuremediaplayer" class="azuremediaplayer amp-default-skin amp-big-play-centered" controls autoplay width="640" height="400" poster="" data-setup='{}' tabindex="0">
         <source src="//amssamples.streaming.mediaservices.windows.net/3b970ae0-39d5-44bd-b3a3-3136143d6435/AzureMediaServicesPromo.ism/manifest" type="application/vnd.ms-sstr+xml" />
-      </video>
-      <VideoMenu videoRef={videoRef} />
+    </video>
+      {/* <VideoMenu videoRef={videoRef} /> */}
     </div>
   );
 }
